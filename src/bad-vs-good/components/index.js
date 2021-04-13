@@ -15,6 +15,12 @@ import Overexposed from '../img/Overexposed(2).jpg'
 import TextBad from '../img/TextBad(2).jpg'
 import TextGood from '../img/TextGood(2).jpg'
 
+import FaceBad from '../img/FaceBad(2).jpg'
+import FaceGood from '../img/FaceGood(2).jpg'
+
+import ColorGood from '../img/ColorGood(2).jpg'
+import ColorBad from '../img/ColorBad(2).jpg'
+
 
 class BadvsGood extends React.Component {
 
@@ -71,6 +77,26 @@ style={ {height:400, width:700} }
   itemTwo={<ReactCompareSliderImage src={TextGood} srcSet={TextGood} alt="Image two" />}
 />
 </div>
+<div className="block-inner">
+  <h1>Face</h1>
+<ReactCompareSlider
+style={ {height:400, width:700} }
+  itemOne={<ReactCompareSliderImage src={FaceBad} srcSet={FaceBad} alt="Image one" />}
+  itemTwo={<ReactCompareSliderImage src={FaceGood} srcSet={FaceGood} alt="Image two" />}
+/>
+</div>
+  </div>
+
+  <div className="block">
+    <div className="block-inner">
+  <h1>Color</h1>
+<ReactCompareSlider
+style={ {height:400, width:700} }
+  itemOne={<ReactCompareSliderImage src={ColorBad} srcSet={ColorBad} alt="Image one" />}
+  itemTwo={<ReactCompareSliderImage src={ColorGood} srcSet={ColorGood} alt="Image two" />}
+/>
+</div>
+
   </div>
 
 
